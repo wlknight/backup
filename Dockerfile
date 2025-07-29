@@ -48,7 +48,7 @@ RUN rm -rf packages/app/client/src/.umi 2>/dev/null || true \
 RUN rm -rf node_modules
 #    重新只安装生产依赖
 #    *** 修改点3: 使用 --production 标志 ***
-RUN yarn install --production --network-timeout 600000 -g
+RUN yarn install --production --network-timeout 600000
 #    (可选) 清理 yarn 缓存
 RUN yarn cache clean --force
 
